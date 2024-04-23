@@ -1,0 +1,29 @@
+[
+    {
+        "model": "stock.Stock",
+        "pk": 1,
+        "fields": {
+            "name": "Склад №1",
+            "address": "улица 9 Января, 16к5, Пермь, 614058",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Stock",
+        "pk": 2,
+        "fields": {
+            "name": "Склад №2",
+            "address": "Фонтанная улица, 9, Пермь, 614002",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Stock",
+        "pk": 3,
+        "fields": {
+            "name": "Склад №3",
+            "address": "улица Дружбы, 27, Пермь, 614070",
+            "description": ""
+        }
+    }
+]

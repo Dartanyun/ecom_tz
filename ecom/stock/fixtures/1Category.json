@@ -1,0 +1,50 @@
+[
+    {
+        "model": "stock.Category",
+        "pk": 1,
+        "fields": {
+            "name": "Процессоры",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Category",
+        "pk": 2,
+        "fields": {
+            "name": "Материнские платы",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Category",
+        "pk": 3,
+        "fields": {
+            "name": "Оперативная память",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Category",
+        "pk": 4,
+        "fields": {
+            "name": "Видеокарты",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Category",
+        "pk": 5,
+        "fields": {
+            "name": "Блоки питания",
+            "description": ""
+        }
+    },
+    {
+        "model": "stock.Category",
+        "pk": 6,
+        "fields": {
+            "name": "SSD накопители",
+            "description": ""
+        }
+    }
+]

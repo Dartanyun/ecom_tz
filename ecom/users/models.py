@@ -11,6 +11,11 @@ class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(
         max_length=100, blank=False, verbose_name="Логин", unique=True
     )
+    first_name = models.CharField(verbose_name="Имя", max_length=100)
+    last_name = models.CharField(verbose_name="Фамилия", max_length=150)
+    middle_name = models.CharField(
+        verbose_name="Отчество", max_length=150, blank=True
+    )
     password = models.CharField(
         verbose_name="Пароль",
         blank=False,

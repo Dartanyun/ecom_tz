@@ -1,7 +1,7 @@
 [
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 1,
         "fields": {
             "equipment": 1,
             "stock": 1,
@@ -10,7 +10,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 2,
         "fields": {
             "equipment": 2,
             "stock": 1,
@@ -19,7 +19,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 3,
         "fields": {
             "equipment": 3,
             "stock": 1,
@@ -28,7 +28,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 4,
         "fields": {
             "equipment": 4,
             "stock": 2,
@@ -46,7 +46,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 6,
         "fields": {
             "equipment": 6,
             "stock": 2,
@@ -55,7 +55,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 7,
         "fields": {
             "equipment": 2,
             "stock": 3,
@@ -64,7 +64,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 8,
         "fields": {
             "equipment": 3,
             "stock": 3,
@@ -73,7 +73,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 9,
         "fields": {
             "equipment": 4,
             "stock": 3,
@@ -82,7 +82,7 @@
     },
     {
         "model": "stock.EquipmentStock",
-        "pk": 5,
+        "pk": 10,
         "fields": {
             "equipment": 5,
             "stock": 3,

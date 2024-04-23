@@ -1,0 +1,92 @@
+[
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 1,
+            "stock": 1,
+            "quantity": 37
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 2,
+            "stock": 1,
+            "quantity": 18
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 3,
+            "stock": 1,
+            "quantity": 22
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 4,
+            "stock": 2,
+            "quantity": 7
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 5,
+            "stock": 2,
+            "quantity": 73
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 6,
+            "stock": 2,
+            "quantity": 62
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 2,
+            "stock": 3,
+            "quantity": 10
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 3,
+            "stock": 3,
+            "quantity": 12
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 4,
+            "stock": 3,
+            "quantity": 7
+        }
+    },
+    {
+        "model": "stock.EquipmentStock",
+        "pk": 5,
+        "fields": {
+            "equipment": 5,
+            "stock": 3,
+            "quantity": 1
+        }
+    }
+]

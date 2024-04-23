@@ -144,3 +144,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Используем кастомную пользовательскую модель
 
 AUTH_USER_MODEL = "users.User"
+
+# Настройки REST FRAMEWORK
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.TokenAuthentication",
+    ),
+}

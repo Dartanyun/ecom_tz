@@ -56,6 +56,6 @@ jobs:
       - name: Push to Docker Hub gateway
         uses: docker/build-push-action@v3
         with:
-          context: ./infra/
+          context: ./ecom/infra/
           push: true
           tags: dartanyun/ecom_gateway:latest

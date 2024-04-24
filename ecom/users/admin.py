@@ -20,6 +20,7 @@ class UserAdmin(admin.ModelAdmin):
         "is_superuser",
     )
     search_fields = ("username",)
+    list_filter = ("is_active", "is_superuser")
     inlines = [EquipmentUserTabularInline]
 
     def save_model(self, request, obj, form, change):

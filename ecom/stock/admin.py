@@ -16,6 +16,11 @@ class EquipmentStockTabularInline(admin.TabularInline):
     model = EquipmentStock
 
 
+@admin.register(EquipmentStock)
+class EquipmentStockAdmin(admin.ModelAdmin):
+    list_display = ("equipment", "stock", "quantity")
+
+
 @admin.register(Equipment)
 class EquipmentAdmin(admin.ModelAdmin):
     list_display = (

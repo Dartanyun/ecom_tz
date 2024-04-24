@@ -32,30 +32,30 @@ jobs:
     needs:
       - linter_test
       # - pytest_test
-  steps:
-    - name: Check out the repo
-      # Получение исходного кода из репозитория
-      uses: actions/checkout@v4
-    - name: Set up Docker Buildx
-      # Установка сборщика контейнеров Docker
-      uses: docker/setup-buildx-action@v3
-    - name: Login to Docker
-      # Авторизация на Docker Hub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Push to DockerHub
-      # Одновременный билд и пуш образа в Docker Hub
-      uses: docker/build-push-action@v5
-      with:
-        context: ./ecom/
-        push: true
-        tags: dartanyun/ecom_backend:latest
-      # Одновременный билд и пуш образа в Docker Hub
-    - name: Push to Docker Hub gateway
-      uses: docker/build-push-action@v3
-      with:
-        context: ./src/infra/
-        push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/tte_gateway:latest
+    steps:
+      - name: Check out the repo
+        # Получение исходного кода из репозитория
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        # Установка сборщика контейнеров Docker
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker
+        # Авторизация на Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Push to DockerHub
+        # Одновременный билд и пуш образа в Docker Hub
+        uses: docker/build-push-action@v5
+        with:
+          context: ./ecom/
+          push: true
+          tags: dartanyun/ecom_backend:latest
+        # Одновременный билд и пуш образа в Docker Hub
+      - name: Push to Docker Hub gateway
+        uses: docker/build-push-action@v3
+        with:
+          context: ./src/infra/
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/tte_gateway:latest

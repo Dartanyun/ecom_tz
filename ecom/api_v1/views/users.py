@@ -1,16 +1,14 @@
 from api_v1.serializers.users import UserCreateSerializer, UserSerializer
-from djoser.views import UserViewSet
-from rest_framework.permissions import AllowAny
+from rest_framework.viewsets import ModelViewSet
 from users.models import User
 
 
-class UsersViewSet(UserViewSet):
+class UsersViewSet(ModelViewSet):
     """
-    Viewset модели пользователя из Djoser.
+    Viewset модели пользователя.
     """
 
     queryset = User.objects.all()
-    permission_classes = (AllowAny,)
 
     def get_serializer_class(self):
         if self.request.method == "GET":

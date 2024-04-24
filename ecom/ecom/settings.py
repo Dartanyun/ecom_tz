@@ -156,3 +156,8 @@ REST_FRAMEWORK = {
         "api_v1.permissions.IsAdminOrReadOnly",
     ],
 }
+
+# Установка папки со статикой
+
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "collected_static")

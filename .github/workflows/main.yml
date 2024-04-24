@@ -58,4 +58,4 @@ jobs:
         with:
           context: ./infra/
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/tte_gateway:latest
+          tags: dartanyun/ecom_gateway:latest

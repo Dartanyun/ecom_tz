@@ -1,0 +1,74 @@
+[
+    {
+        "model": "stock.Equipment",
+        "pk": 1,
+        "fields": {
+            "name": "Процессор Intel Core i5 13400F",
+            "description": "OEM [cm8071505093005 srmbn]",
+            "category": 1
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 2,
+        "fields": {
+            "name": "Блок питания DeepCool PK700D",
+            "description": "",
+            "category": 5
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 3,
+        "fields": {
+            "name": "Накопитель SSD M.2 ADATA 1TB LEGEND 900",
+            "description": "SLEG-900-1TCS",
+            "category": 6
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 4,
+        "fields": {
+            "name": "SSD диск SAMSUNG M.2 970 EVO Plus 500 Гб ",
+            "description": "MZ-V7S500BW",
+            "category": 6
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 5,
+        "fields": {
+            "name": "Видеокарта Palit NVIDIA GeForce RTX 4070",
+            "description": "Ret [ned4070019k9-1047j]",
+            "category": 4
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 6,
+        "fields": {
+            "name": "Видеокарта ASUS NVIDIA GeForce RTX 4070",
+            "description": "Ret",
+            "category": 4
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 7,
+        "fields": {
+            "name": "Оперативная память ADATA XPG GAMMIX D35",
+            "description": "AX4U360016G18I-DTBKD35",
+            "category": 3
+        }
+    },
+    {
+        "model": "stock.Equipment",
+        "pk": 8,
+        "fields": {
+            "name": "Оперативная память Kingston FURY Beast Black",
+            "description": "KF316C10BB/4",
+            "category": 3
+        }
+    }
+]

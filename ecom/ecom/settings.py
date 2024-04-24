@@ -43,9 +43,14 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "djoser",
+    "drf_yasg",
     # проектные приложения
     "users",
     "stock",
+    "api_v1",
 ]
 
 MIDDLEWARE = [
@@ -140,3 +145,14 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Используем кастомную пользовательскую модель
 
 AUTH_USER_MODEL = "users.User"
+
+# Настройки REST FRAMEWORK
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.TokenAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": [
+        "api_v1.permissions.IsAdminOrReadOnly",
+    ],
+}

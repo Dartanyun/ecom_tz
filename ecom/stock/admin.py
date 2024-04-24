@@ -1,5 +1,24 @@
 from django.contrib import admin
-from stock.models import Category, Equipment, Stock
+from stock.models import (
+    Category,
+    Equipment,
+    EquipmentStock,
+    EquipmentUser,
+    Stock,
+)
+
+
+class EquipmentUserTabularInline(admin.TabularInline):
+    model = EquipmentUser
+
+
+class EquipmentStockTabularInline(admin.TabularInline):
+    model = EquipmentStock
+
+
+@admin.register(EquipmentStock)
+class EquipmentStockAdmin(admin.ModelAdmin):
+    list_display = ("equipment", "stock", "quantity")
 
 
 @admin.register(Equipment)
@@ -8,12 +27,10 @@ class EquipmentAdmin(admin.ModelAdmin):
         "id",
         "name",
         "category",
-        "stock",
         "description",
-        "quantity",
     )
-    search_fields = ("name", "category", "stock")
-    list_filter = ("name", "category", "stock")
+    search_fields = ("name", "category")
+    list_filter = ("category",)
 
 
 @admin.register(Category)
@@ -26,3 +43,4 @@ class CategoryAdmin(admin.ModelAdmin):
 class StockAdmin(admin.ModelAdmin):
     list_display = ("id", "name", "address", "description")
     search_fields = ("name", "address")
+    inlines = [EquipmentStockTabularInline]

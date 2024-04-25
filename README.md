@@ -57,17 +57,14 @@
 
 1. *Выполните миграции*:
 
+    * Создайте миграции
+        ```sh
+        python manage.py makemigrations
+        ```
+
     * Инициализируйте миграции
         ```sh
         python manage.py migrate
-        ```
-
-    * Создайте миграции
-        ```sh
-        python manage.py makemigrations user
-        ```
-        ```sh
-        python manage.py makemigrations towin
         ```
 
     * Примените миграции
@@ -82,6 +79,10 @@
     ```sh
     python manage.py loaddata */fixtures/*.json
     ```
+    Также из фикстур создается базовая admin запись со следующими данными.
+
+    email: admin@admin.ru
+    password: admin
 ---
 3. *Локальный запуск*:
 

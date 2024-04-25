@@ -81,7 +81,7 @@
     ```
     Также из фикстур создается базовая admin запись со следующими данными.
 
-    email: admin@admin.ru
+    username: admin
     password: admin
 ---
 3. *Локальный запуск*:

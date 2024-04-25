@@ -98,7 +98,7 @@
     docker compose -f ecom/infra/docker-compose.yaml up -d --build
     ```
     *После запуска проект будет доступ по адресу http://localhost:8000/*
-    
+
 2. *Для остановки контейнера*:
     ```sh
     docker compose -f ecom/infra/docker-compose.yaml down
